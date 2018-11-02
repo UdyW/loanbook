@@ -29,8 +29,19 @@ class ClientController extends Controller
 
     public function storeClient(Request $request){
   	    $v = Validator::make($request->all(), [
-        	'name' => 'required|max:255',
+        	        	'name' => 'required|max:255',
         	'loan_amount' => 'required',
+        	'loan_start_date' => 'required',
+        	'loan_term' => 'required',
+        	'loan_type' => 'required',
+        	'security_value' => 'required',
+        	'security_type' => 'required',
+        	'ltv_ratio' => 'required',
+        	'intrest_rate' => 'required',
+        	'intrest_per_month' => 'required',
+        	'default_intrest' => 'required',
+        	'payment_due_date' => 'required',
+        	'total_intrest' => 'required',
         	'document_loan' => 'required',
         	'document_sec' => 'required',
         	'document_kyc' => 'required',

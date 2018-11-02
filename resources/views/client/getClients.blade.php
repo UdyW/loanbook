@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <a class="button" href="{{ route('client.getClient',['id'=>0])}}">Add Client</a>
+            <a style="color:black;" class="button" href="{{ route('client.getClient',['id'=>0])}}">Add Client</a>
             <div class="card">
                 
                 <table class="u-full-width table">
