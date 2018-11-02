@@ -20,7 +20,7 @@
                     </li>
                 @else
                     <li class="nav-item">
-                        <a class="nav-link" href="#">{{ Auth::user()->name }}<span class="caret"></span></a>
+                        <a class="nav-link" href="#">Welcome {{ Auth::user()->name }}<span class="caret"></span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/client/getClients">Client</a>
