@@ -17,7 +17,7 @@
             <a class="button" href="{{ route('client.getClient',['id'=>0])}}">Add Client</a>
             <div class="card">
                 <form method="POST" action="@if(!is_null($client)) route('client.getClient'['id'=>$client->id]) @endif" class="bootstrap-iso bg-white rounded pb_form_v1"  enctype="multipart/form-data">
-  {{ csrf_field() }}   
+  {{ csrf_field() }}
  @if ($errors->any())
           <div class="alert alert-danger">
               <ul>
